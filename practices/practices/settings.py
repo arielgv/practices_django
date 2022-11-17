@@ -54,7 +54,7 @@ ROOT_URLCONF = 'practices.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/arielvillafane/Documents/November/Django/practices/practices/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

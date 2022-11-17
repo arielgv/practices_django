@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1 style= " color = orange ">
+            " Test Page {{probando}}" Hola {{nombre}} 
+        </h1>
+        <p> Bienvenido {{nombre2}} {{ape2}}, fecha de nacimiento {{year2}}
+        </p>
+        <p>
+            <strong>Esta es la lista creada :</strong>
+        
+        </p>
+        <p><ul>
+            {%if lista%}
+            {%for element in lista %}
+            <p> <li>{{element}}</li><p>
+            {%endfor%}
+            {%else%}
+            <p> No hay elementos para mostrar </p>
+            {%endif%}
+
+            </ul></p>
+    </body>
+</html>

@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from practices import views
+from practices import views 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',views.home, name="Main Page"),
+    path('',views.mainpage, name="main page" ),
+    path('home/',views.home, name="home?"),
     path('users/',views.userpage, name="User page"),
+    path('time/', views.timefunc, name="time page"),
+    path('testpage/<int:entero>/<name>', views.testpage, name = "test page"), 
+    path('years/<int:year>/<int:age>', views.yearcalculator, name="year calc")
 ]
